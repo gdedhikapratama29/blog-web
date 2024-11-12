@@ -39,7 +39,7 @@ const Login = () => {
         {error && <h3 className="text-red-500 text-sm">something went wrong</h3>}
         <div className="flex jusstify-center items-center space-x-4">
             <p>New Here?</p>
-            <p className="text-gray-500 hover:text-black"><Link to="/register">Login</Link></p>
+            <p className="text-gray-500 hover:text-black"><Link to="/register">Register</Link></p>
         </div>
       </div>
     </div>

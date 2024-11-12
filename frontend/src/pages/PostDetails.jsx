@@ -33,14 +33,19 @@ const PostDetails = () => {
   }
 
   const handleDeletePost = async () => {
+    const confirmDelete = window.confirm("yakin postingan di hapus?");
+    if (!confirmDelete) return; // Jika pengguna membatalkan, keluar dari fungsi
+  
     try {
-      const res = await axios.delete(`${URL}/api/posts/${postId}`, { withCredentials: true })
-      console.log(res.data)
-      navigate("/")
+      const res = await axios.delete(`${URL}/api/posts/${postId}`, { withCredentials: true });
+      console.log(res.data);
+      alert("post berhasil di hapus!");
+      navigate("/");
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
+  
 
   useEffect(() => {
     fetchPosts()

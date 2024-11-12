@@ -26,10 +26,10 @@ const ProfilePost = ({ post }) => {
       {/* Bagian Kanan */}
       <div className="flex flex-col w-[65%]">
         <h1 className="text-xl font-bold md:mb-2 mb-1 md:text-2xl">
-          {post.title || "Untitled"} {/* Default jika title kosong */}
+          {post.title || "Untitled"} 
         </h1>
         <div className="flex mb-2 text-sm font-semibold text-gray-500 space-x-4 items-center justify-between md:mb-4">
-          <p>@{post.username || "Unknown"}</p> {/* Default jika username kosong */}
+          <p>@{post.username || "Unknown"}</p> 
           <div className="flex space-x-2">
             <p>
               {post.updatedAt

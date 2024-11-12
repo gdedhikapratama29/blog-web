@@ -44,7 +44,7 @@ const Register = () => {
         {error && <h3 className="text-red-500 text-sm">something went wrong</h3>}
         <div className="flex jusstify-center items-center space-x-4">
             <p>already have an account?</p>
-            <p className="text-gray-500 hover:text-black"><Link to="/login">Register</Link></p>
+            <p className="text-gray-500 hover:text-black"><Link to="/login">login</Link></p>
         </div>
       </div>
     </div>
